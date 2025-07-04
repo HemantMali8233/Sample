@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us-heading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 4rem;
+    color: #18A558;
+}
+
+.form-elements{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+form input{
+    width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+    margin-left: 9px;
+    padding-left: 9px;
+}
+
+form textarea{
+    width: 50%;
+    height: 5rem;
+    border-radius: 10px;
+    padding-left: 9px;
+}
+
+form button{
+    width: 25%;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #18A558;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.logo-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-icon {
+  font-size: 40px;
+  text-align: center;
+}
+
+.logo-title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shift-left {
+  transform: translateX(-100%);
+  opacity: 0.7;
+}
+
+.info-panel {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInRight 0.5s forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.info-panel h3 {
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.info-panel p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
